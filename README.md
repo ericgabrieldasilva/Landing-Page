@@ -1,3 +1,3 @@
 # TwProjects
-Landing page simples.
+Landing page simples desenvolvida com a finalidade de treino.
 
