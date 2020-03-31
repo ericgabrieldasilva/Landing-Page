@@ -1,0 +1,385 @@
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Baloo 2', cursive;
+}
+
+html,body{
+	height: 100%;
+}
+
+body{
+	background-color: #f3f4f5;
+}
+
+/*Classes auxiliares*/
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.w50{
+	width: 50%;
+}
+
+.clear{
+	clear: both;
+}
+
+div.wave{
+	background-image: url('../images/wave.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 14vw;
+}
+
+div.wave-footer{
+	background-image: url('../images/wave_footer.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 7vw;
+}
+
+/*Header*/
+
+header{
+	background-color: #6C63FF;
+}
+
+div.logo{
+	float: left;
+}
+
+div.logo h2{
+	font-size: 40px;
+	font-family: 'Rancho', cursive;
+}
+
+div.logo h2 span{
+	font-weight: 300;
+	padding: 0 2px;
+}
+
+div.logo a{
+	color: #f3f4f5;
+}
+
+/*Menu desktop*/
+
+nav.menu-desktop{
+	float: right;
+}
+
+nav.menu-desktop ul{
+	position: relative;
+	top: 20px;
+}
+
+nav.menu-desktop li{
+	display: inline-block;
+	padding: 0 20px;
+}
+
+nav.menu-desktop a{
+	color: #f3f4f5;
+	font-size: 20px;
+}
+
+/*Menu mobile*/
+
+nav.menu-mobile{
+	display: none;
+}
+
+nav.menu-mobile h2{
+	float: right;
+	position: relative;
+	top: 15px;
+	color: #f3f4f5;
+	cursor: pointer;
+}
+
+nav.menu-mobile ul{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	background-color: #6C63FF;
+	text-align: center;
+	display: none;
+	height: 100vh;
+}
+
+nav.menu-mobile li{
+	padding: 10px;
+}
+
+nav.menu-mobile a{
+	color: #fff;
+	font-size: 20px;
+	display: block;
+}
+
+/*About*/
+
+section.about{
+	background-color: #6C63FF;
+}
+
+div.about-me{
+	display: flex;
+	align-items: center;
+}
+
+div.text-about,
+div.image-about{
+	padding: 30px;
+}
+
+div.text-about{
+	color: #f3f4f5;
+}
+
+div.text-about h2{
+	font-size: 55px;
+	color: #fff;
+}
+
+div.text-about p{
+	font-size: 20px;
+}
+
+div.image-about{
+	text-align: center;
+}
+
+div.image-about img{
+	width: 100%;
+	max-width: 400px;
+}
+
+/*Mosaico*/
+
+div.mosaico-single{
+	display: flex;
+	align-items: center;
+}
+
+div.mosaico-single:nth-child(even) div.text-mosaico{
+	order: 2;
+}
+
+div.mosaico-single:nth-child(even) div.image-mosaico{
+	order: 1;
+}
+
+div.text-mosaico,
+div.image-mosaico{
+	padding: 30px;
+}
+
+div.text-mosaico{
+	color: #777;
+}
+
+div.text-mosaico h2{
+	font-size: 35px;
+}
+
+div.text-mosaico p{
+	font-size: 17px;
+	color: #999;
+}
+
+div.image-mosaico{
+	text-align: center;
+}
+
+div.image-mosaico img{
+	width: 100%;
+	max-width: 400px;
+}
+
+/*Contato*/
+
+section.contato{
+	padding: 50px 0;
+}
+
+div.box-contato{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+div.form-contato h2{
+	color: #666;
+	font-size: 35px;
+	padding: 20px 0;
+}
+
+div.input-single{
+	padding: 10px 0;
+}
+
+div.input-single span{
+	color: #777;
+}
+
+div.input-single input[type="text"],
+div.input-single input[type="email"],
+div.input-single select,
+div.input-single textarea{
+	width: 100%;
+	height: 40px;
+	color: #999;
+	padding-left: 10px;
+	font-size: 16px;
+	border: 1px solid #e1e2e6;
+	background: none;
+}
+
+div.input-single textarea{
+	height: 150px;
+	resize: none;
+	padding: 10px;
+}
+
+div.image-contato{
+	text-align: center;
+	padding: 20px;
+}
+
+div.image-contato img{
+	width: 100%;
+	max-width: 400px;
+}
+
+/*Footer*/
+
+footer{
+	padding-bottom: 20px;
+	background-color: #6C63FF;
+	color: #fff;
+}
+
+footer p{
+	display: inline-block;
+}
+
+div.direitos{
+	float: left;
+}
+
+div.developed{
+	float: right;
+}
+
+div.developed span{
+	font-weight: bold;
+}
+
+/*Responsivo*/
+
+@media screen and (max-width: 1024px){
+	div.text-about{
+		padding: 10px;
+	}
+
+	div.text-about h2{
+		font-size: 40px;
+	}
+
+	div.text-about p{
+		font-size: 16px;
+	}
+
+	div.text-mosaico{
+		padding: 10px;
+	}
+
+	div.image-mosaico{
+		padding-right: 10px;
+	}
+
+	div.text-mosaico h2{
+		font-size: 32px;
+	}
+
+	div.text-mosaico p{
+		font-size: 15px;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	.w50{
+		width: 100%;
+	}
+
+	header{
+		padding: 0 10px;
+	}
+
+	div.about-me{
+		flex-wrap: wrap;
+	}
+
+	div.image-about{
+		display: none;
+	}
+
+	div.mosaico-single{
+		display: block;
+		padding: 40px 0;
+	}
+
+	div.image-mosaico{
+		padding: 30px;
+	}
+
+	div.image-mosaico img{
+		max-width: 300px;
+	}
+
+	div.text-mosaico{
+		
+		text-align: center;
+		padding-bottom: 40px;
+	}
+
+	div.form-contato h2{
+		text-align: center;
+	}
+
+	div.image-contato{
+		display: none;
+	}
+
+	footer div.logo,
+	div.direitos,
+	div.developed{
+		float: none;
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 600px){
+	nav.menu-desktop{
+		display: none;
+	}
+
+	nav.menu-mobile{
+		display: block;
+	}
+}
