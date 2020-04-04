@@ -172,6 +172,14 @@ div.image-about img{
 div.mosaico-single{
 	display: flex;
 	align-items: center;
+	opacity: 0;
+	transition: .5s;
+	position: relative;
+	top: -100px;
+}
+
+div.mosaico-single:nth-of-type(1){
+
 }
 
 div.mosaico-single:nth-child(even) div.text-mosaico{
@@ -180,6 +188,7 @@ div.mosaico-single:nth-child(even) div.text-mosaico{
 
 div.mosaico-single:nth-child(even) div.image-mosaico{
 	order: 1;
+	
 }
 
 div.text-mosaico,
